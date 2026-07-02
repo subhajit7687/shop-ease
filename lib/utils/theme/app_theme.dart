@@ -1,5 +1,6 @@
 import 'package:e_commerce/utils/theme/custom/bottom_sheet_theme.dart';
 import 'package:e_commerce/utils/theme/custom/checkbox_theme.dart';
+import 'package:e_commerce/utils/theme/custom/chip_theme.dart';
 import 'package:e_commerce/utils/theme/custom/elevated_button_theme.dart';
 import 'package:e_commerce/utils/theme/custom/text_theme.dart';
 import 'package:e_commerce/utils/theme/custom/appbar_theme.dart';
@@ -16,6 +17,7 @@ class AppTheme {
     appBarTheme: CAppbarTheme.lightAppBarTheme,
     bottomSheetTheme: CBottomSheetTheme.lightBottomSheetTheme,
     checkboxTheme: CCheckboxTheme.lightCheckboxTheme,
+    chipTheme: CChipTheme.lightChipTheme,
   );
 
   static final darkThemeData = ThemeData(
@@ -25,6 +27,7 @@ class AppTheme {
     elevatedButtonTheme: CElevatedButtonTheme.darkElevatedButtonTheme,
     appBarTheme: CAppbarTheme.darkAppBarTheme,
     bottomSheetTheme: CBottomSheetTheme.darkBottomSheetTheme,
-    checkboxTheme: CCheckboxTheme.darkCheckboxTheme
+    checkboxTheme: CCheckboxTheme.darkCheckboxTheme,
+    chipTheme: CChipTheme.darkChipTheme,
   );
 }
