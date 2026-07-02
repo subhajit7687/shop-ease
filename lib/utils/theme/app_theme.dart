@@ -1,5 +1,6 @@
 import 'package:e_commerce/utils/theme/custom/app_elevated_button_theme.dart';
 import 'package:e_commerce/utils/theme/custom/app_text_theme.dart';
+import 'package:e_commerce/utils/theme/custom/appbar_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -10,6 +11,7 @@ class AppTheme {
     fontFamily: 'Poppins',
     textTheme: AppTextTheme.lightTextTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
+    appBarTheme: CAppbarTheme.lightAppBarTheme,
   );
 
   static final darkThemeData = ThemeData(
@@ -17,5 +19,6 @@ class AppTheme {
     fontFamily: 'Poppins',
     textTheme: AppTextTheme.darkTextTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
+    appBarTheme: CAppbarTheme.darkAppBarTheme,
   );
 }
