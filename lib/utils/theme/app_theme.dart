@@ -1,4 +1,4 @@
-import 'package:e_commerce/utils/theme/app_text_theme.dart';
+import 'package:e_commerce/utils/theme/custom/app_text_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
