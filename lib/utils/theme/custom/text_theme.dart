@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AppTextTheme {
-  const AppTextTheme._();
+class CTextTheme {
+  const CTextTheme._();
 
   static final lightTextTheme = TextTheme(
     //Headline
