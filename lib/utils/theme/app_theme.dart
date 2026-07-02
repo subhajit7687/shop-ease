@@ -14,6 +14,8 @@ class AppTheme {
   static final lightThemeData = ThemeData(
     brightness: Brightness.light,
     fontFamily: 'Poppins',
+    primaryColor: Colors.blue,
+    scaffoldBackgroundColor: Colors.white,
     textTheme: CTextTheme.lightTextTheme,
     elevatedButtonTheme: CElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: COutlinedButtonTheme.lightOutlinedButtonTheme,
@@ -27,6 +29,8 @@ class AppTheme {
   static final darkThemeData = ThemeData(
     brightness: Brightness.dark,
     fontFamily: 'Poppins',
+    primaryColor: Colors.blue,
+    scaffoldBackgroundColor: Colors.black,
     textTheme: CTextTheme.darkTextTheme,
     elevatedButtonTheme: CElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: COutlinedButtonTheme.lightOutlinedButtonTheme,
