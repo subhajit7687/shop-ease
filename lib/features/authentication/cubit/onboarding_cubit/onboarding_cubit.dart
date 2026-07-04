@@ -1,13 +1,36 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnboardingCubit extends Cubit<int> {
   OnboardingCubit() : super(0);
 
-  void updatePageIndicator(int index) {}
+  final pageController = PageController();
+  int currentIndex = 0;
 
-  void dotNavigationClick(int index) {}
+  void updatePageIndicator(int index) {
+    currentIndex = index;
+  }
 
-  void nextPage() {}
+  void dotNavigationClick(int index) {
+    currentIndex = index;
+    pageController.jumpToPage(index);
+  }
 
-  void skipPage() {}
+  void nextPage() {
+    if (currentIndex == 2) {
+      //
+    } else {
+      pageController.jumpToPage(++currentIndex);
+    }
+  }
+
+  void skipPage() {
+    pageController.jumpToPage(2);
+  }
+
+  @override
+  Future<void> close() {
+    pageController.dispose();
+    return super.close();
+  }
 }
