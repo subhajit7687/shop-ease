@@ -5,27 +5,28 @@ class OnboardingCubit extends Cubit<int> {
   OnboardingCubit() : super(0);
 
   final pageController = PageController();
-  int currentIndex = 0;
 
   void updatePageIndicator(int index) {
-    currentIndex = index;
+    emit(index);
   }
 
   void dotNavigationClick(int index) {
-    currentIndex = index;
-    pageController.jumpToPage(index);
+    emit(index);
+    pageController.jumpToPage(state);
   }
 
   void nextPage() {
-    if (currentIndex == 2) {
+    if (state == 2) {
       //
     } else {
-      pageController.jumpToPage(++currentIndex);
+      emit(state + 1);
+      pageController.jumpToPage(state);
     }
   }
 
   void skipPage() {
-    pageController.jumpToPage(2);
+    emit(2);
+    pageController.jumpToPage(state);
   }
 
   @override
