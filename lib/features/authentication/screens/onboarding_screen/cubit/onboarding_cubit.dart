@@ -16,17 +16,15 @@ class OnboardingCubit extends Cubit<int> {
   }
 
   void nextPage() {
-    if (state == 2) {
-      //
-    } else {
       emit(state + 1);
-      pageController.jumpToPage(state);
-    }
+      if(state <= 2) {
+        pageController.jumpToPage(state);
+      }
+   
   }
 
   void skipPage() {
-    emit(2);
-    pageController.jumpToPage(state);
+    emit(3);
   }
 
   @override
