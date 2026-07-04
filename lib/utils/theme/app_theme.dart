@@ -33,7 +33,7 @@ class AppTheme {
     scaffoldBackgroundColor: Colors.black,
     textTheme: CTextTheme.darkTextTheme,
     elevatedButtonTheme: CElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: COutlinedButtonTheme.lightOutlinedButtonTheme,
+    outlinedButtonTheme: COutlinedButtonTheme.darkOutlinedButtonTheme,
     appBarTheme: CAppbarTheme.darkAppBarTheme,
     bottomSheetTheme: CBottomSheetTheme.darkBottomSheetTheme,
     checkboxTheme: CCheckboxTheme.darkCheckboxTheme,
