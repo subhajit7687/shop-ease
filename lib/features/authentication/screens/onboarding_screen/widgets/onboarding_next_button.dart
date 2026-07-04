@@ -1,8 +1,10 @@
+import 'package:e_commerce/features/authentication/cubit/onboarding_cubit/onboarding_cubit.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/device/device_utils.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
 
 class OnboardingNextButton extends StatelessWidget {
@@ -20,7 +22,9 @@ class OnboardingNextButton extends StatelessWidget {
               ? CColors.primary
               : CColors.black,
         ),
-        onPressed: () {},
+        onPressed: () {
+          context.read<OnboardingCubit>().nextPage();
+        },
         child: Icon(Iconsax.arrow_right_3),
       ),
     );
