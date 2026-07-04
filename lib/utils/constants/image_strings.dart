@@ -6,7 +6,7 @@ class CImages {
   static const lightAppLogo = 'assets/logo/logo_light.png';
 
   //Social Logos
-  static const google = 'assets/logos/google.png';
+  static const google = 'assets/logo/google.png';
   static const facebook = 'assets/logo/facebook.png';
 
   static const onboardingImage1 =
