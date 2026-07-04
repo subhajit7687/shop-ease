@@ -33,7 +33,7 @@ class LoginForm extends StatelessWidget {
               Checkbox(value: true, onChanged: (value) {}),
               Text('Remember Me'),
               Spacer(),
-              TextButton(onPressed: () {}, child: Text('Forget Password')),
+              TextButton(onPressed: () {}, child: Text('Forget Password?')),
             ],
           ),
           SizedBox(height: CSizes.spaceBetweenSections),
