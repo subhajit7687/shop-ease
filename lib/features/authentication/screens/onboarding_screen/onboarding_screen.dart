@@ -1,4 +1,4 @@
-import 'package:e_commerce/features/authentication/cubit/onboarding_cubit/onboarding_cubit.dart';
+import 'package:e_commerce/features/authentication/screens/onboarding_screen/cubit/onboarding_cubit.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding_screen/widgets/onboarding_next_button.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding_screen/widgets/onboarding_page_indicator.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding_screen/widgets/onboarding_page_item.dart';
