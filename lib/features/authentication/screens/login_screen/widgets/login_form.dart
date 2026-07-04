@@ -27,6 +27,28 @@ class LoginForm extends StatelessWidget {
               suffixIcon: Icon(Iconsax.eye_slash),
             ),
           ),
+          SizedBox(height: CSizes.spaceBetweenInputFields / 2),
+          Row(
+            children: [
+              Checkbox(value: true, onChanged: (value) {}),
+              Text('Remember me'),
+              Spacer(),
+              TextButton(onPressed: () {}, child: Text('Forget Password')),
+            ],
+          ),
+          SizedBox(height: CSizes.spaceBetweenSections),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(onPressed: () {}, child: Text('Sign in')),
+          ),
+          SizedBox(height: CSizes.spaceBetweenItems),
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(
+              onPressed: () {},
+              child: Text('Create account'),
+            ),
+          ),
         ],
       ),
     );
