@@ -1,3 +1,4 @@
+import 'package:e_commerce/router/router.dart';
 import 'package:e_commerce/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -6,14 +7,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp.router(
       theme: AppTheme.lightThemeData,
       darkTheme: AppTheme.darkThemeData,
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      routerConfig: appRouter,
     );
   }
 }
