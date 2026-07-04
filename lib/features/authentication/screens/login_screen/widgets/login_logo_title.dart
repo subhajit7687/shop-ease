@@ -19,9 +19,12 @@ class LoginLogoTitle extends StatelessWidget {
               : CImages.lightAppLogo,
           width: DeviceUtils.getScreenWidth(context) * 0.4,
         ),
-        Text('Welcome', style: theme.textTheme.headlineMedium),
+        Text('Welcome back,', style: theme.textTheme.headlineMedium),
         SizedBox(height: CSizes.sm),
-        Text('Subtitle', style: theme.textTheme.bodyMedium),
+        Text(
+          'Discover Limitless Choices and Unmatched Convenience',
+          style: theme.textTheme.bodyMedium,
+        ),
       ],
     );
   }
