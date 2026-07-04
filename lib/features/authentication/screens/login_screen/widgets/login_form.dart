@@ -31,7 +31,7 @@ class LoginForm extends StatelessWidget {
           Row(
             children: [
               Checkbox(value: true, onChanged: (value) {}),
-              Text('Remember me'),
+              Text('Remember Me'),
               Spacer(),
               TextButton(onPressed: () {}, child: Text('Forget Password')),
             ],
@@ -39,14 +39,14 @@ class LoginForm extends StatelessWidget {
           SizedBox(height: CSizes.spaceBetweenSections),
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(onPressed: () {}, child: Text('Sign in')),
+            child: ElevatedButton(onPressed: () {}, child: Text('Sign In')),
           ),
           SizedBox(height: CSizes.spaceBetweenItems),
           SizedBox(
             width: double.infinity,
             child: OutlinedButton(
               onPressed: () {},
-              child: Text('Create account'),
+              child: Text('Create Account'),
             ),
           ),
         ],
