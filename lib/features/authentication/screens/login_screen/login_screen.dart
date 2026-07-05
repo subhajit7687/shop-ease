@@ -1,5 +1,5 @@
 import 'package:e_commerce/common/styles/spacing_styles.dart';
-import 'package:e_commerce/features/authentication/screens/login_screen/widgets/login_divider.dart';
+import 'package:e_commerce/common/widgets/login_signup/form_divider.dart';
 import 'package:e_commerce/features/authentication/screens/login_screen/widgets/login_footer.dart';
 import 'package:e_commerce/features/authentication/screens/login_screen/widgets/login_form.dart';
 import 'package:e_commerce/features/authentication/screens/login_screen/widgets/login_logo_title.dart';
@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(height: CSizes.spaceBetweenSections),
               LoginForm(formKey: _formKey),
               SizedBox(height: CSizes.spaceBetweenSections),
-              LoginDivider(),
+              FormDivider(),
               SizedBox(height: CSizes.spaceBetweenItems),
               LoginFooter(),
             ],

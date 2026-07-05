@@ -2,8 +2,8 @@ import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class LoginDivider extends StatelessWidget {
-  const LoginDivider({super.key});
+class FormDivider extends StatelessWidget {
+  const FormDivider({super.key});
 
   @override
   Widget build(BuildContext context) {
