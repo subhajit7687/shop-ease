@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(height: CSizes.spaceBetweenSections),
               LoginForm(formKey: _formKey),
               SizedBox(height: CSizes.spaceBetweenSections),
-              FormDivider(),
+              FormDivider(text: 'Or Sign In With'),
               SizedBox(height: CSizes.spaceBetweenItems),
               SocialButtons(),
             ],

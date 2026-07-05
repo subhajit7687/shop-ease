@@ -3,7 +3,9 @@ import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class FormDivider extends StatelessWidget {
-  const FormDivider({super.key});
+  const FormDivider({super.key, required this._text});
+
+  final String _text;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class FormDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text('Or Sign In With', style: Theme.of(context).textTheme.labelMedium),
+        Text(_text, style: Theme.of(context).textTheme.labelMedium),
         Expanded(
           child: Divider(
             color: HelperFunctions.isDarkMode(context)
