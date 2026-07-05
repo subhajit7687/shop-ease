@@ -1,8 +1,10 @@
 import 'package:e_commerce/common/widgets/login_signup/form_divider.dart';
 import 'package:e_commerce/common/widgets/login_signup/social_buttons.dart';
 import 'package:e_commerce/features/authentication/screens/signup_screen/widgets/signup_privacy_policy_text.dart';
+import 'package:e_commerce/router/route_names.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignupForm extends StatelessWidget {
@@ -80,7 +82,9 @@ class SignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                context.push(RouteNames.verifyEmail);
+              },
               child: Text('Create Account'),
             ),
           ),
