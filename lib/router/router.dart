@@ -3,6 +3,6 @@ import 'package:e_commerce/router/route_names.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(
-  initialLocation: RouteNames.onboarding,
+  initialLocation: RouteNames.onboarding.path,
   routes: [...authRoutes],
 );

@@ -83,7 +83,7 @@ class SignupForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                context.push(RouteNames.verifyEmail);
+                context.push(RouteNames.verifyEmail.path);
               },
               child: Text('Create Account'),
             ),

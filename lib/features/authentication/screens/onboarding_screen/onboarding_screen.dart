@@ -19,7 +19,7 @@ class OnboardingScreen extends StatelessWidget {
       body: BlocListener<OnboardingCubit, int>(
         listener: (_, state) {
           if (state > 2) {
-            context.go(RouteNames.login);
+            context.go(RouteNames.login.path);
           }
         },
         child: Stack(

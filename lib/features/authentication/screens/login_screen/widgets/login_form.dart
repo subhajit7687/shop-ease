@@ -48,7 +48,7 @@ class LoginForm extends StatelessWidget {
             width: double.infinity,
             child: OutlinedButton(
               onPressed: () {
-                context.push(RouteNames.signup);
+                context.push(RouteNames.signup.path);
               },
               child: Text('Create Account'),
             ),

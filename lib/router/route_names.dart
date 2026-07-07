@@ -1,9 +1,11 @@
-class RouteNames {
-  RouteNames._();
-
+enum RouteNames {
   //Auth
-  static const onboarding = '/auth/onboarding';
-  static const login = '/auth/login';
-  static const signup = '/auth/signup';
-  static const verifyEmail = '/auth/signup/verify_email';
+  onboarding('/auth/onboarding'),
+  login('/auth/login'),
+  signup('/auth/signup'),
+  verifyEmail('/auth/signup/verify_email');
+
+  final String path;
+
+  const RouteNames(this.path);
 }

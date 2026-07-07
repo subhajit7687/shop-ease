@@ -9,19 +9,21 @@ import 'package:go_router/go_router.dart';
 
 final authRoutes = <RouteBase>[
   GoRoute(
-    path: RouteNames.onboarding,
+    path: RouteNames.onboarding.path,
+    name: RouteNames.onboarding.name,
     builder: (context, state) => BlocProvider(
       create: (_) => OnboardingCubit(),
       child: OnboardingScreen(),
     ),
   ),
-  GoRoute(path: RouteNames.login, builder: (context, state) => LoginScreen()),
+  GoRoute(path: RouteNames.login.path, name: RouteNames.login.name, builder: (context, state) => LoginScreen()),
   GoRoute(
-    path: RouteNames.signup,
+    path: RouteNames.signup.path, name: RouteNames.signup.name,
     builder: (context, state) => SignupScreen(),
     routes: [
       GoRoute(
         path: 'verify_email',
+        name: RouteNames.verifyEmail.name,
         builder: (context, state) => VerifyEmailScreen(),
       ),
     ],
