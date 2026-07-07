@@ -20,7 +20,7 @@ class CTextTheme {
     bodySmall: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
 
     //Label
-    labelLarge: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400),
+    labelLarge: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w500),
     labelMedium: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400),
   );
 
