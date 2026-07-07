@@ -16,9 +16,14 @@ final authRoutes = <RouteBase>[
       child: OnboardingScreen(),
     ),
   ),
-  GoRoute(path: RouteNames.login.path, name: RouteNames.login.name, builder: (context, state) => LoginScreen()),
   GoRoute(
-    path: RouteNames.signup.path, name: RouteNames.signup.name,
+    path: RouteNames.login.path,
+    name: RouteNames.login.name,
+    builder: (context, state) => LoginScreen(),
+  ),
+  GoRoute(
+    path: RouteNames.signup.path,
+    name: RouteNames.signup.name,
     builder: (context, state) => SignupScreen(),
     routes: [
       GoRoute(

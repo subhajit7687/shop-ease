@@ -3,7 +3,10 @@ enum RouteNames {
   onboarding('/auth/onboarding'),
   login('/auth/login'),
   signup('/auth/signup'),
-  verifyEmail('/auth/signup/verify_email');
+  verifyEmail('/auth/signup/verify_email'),
+
+  // Common
+  successScreen('/success_screen');
 
   final String path;
 
