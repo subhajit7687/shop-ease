@@ -8,7 +8,13 @@ enum RouteNames {
   resetPassword('/auth/login/forget_password/reset_password'),
 
   // Common
-  successScreen('/success_screen');
+  successScreen('/success_screen'),
+
+  // Dashboard
+  home('/'),
+  store('/store'),
+  wishList('/wish_list'),
+  profile('/profile');
 
   final String path;
 

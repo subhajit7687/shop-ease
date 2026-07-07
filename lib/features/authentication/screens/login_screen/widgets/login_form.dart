@@ -44,7 +44,12 @@ class LoginForm extends StatelessWidget {
           SizedBox(height: CSizes.spaceBetweenSections),
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(onPressed: () {}, child: Text('Sign In')),
+            child: ElevatedButton(
+              onPressed: () {
+                context.go(RouteNames.home.path);
+              },
+              child: Text('Sign In'),
+            ),
           ),
           SizedBox(height: CSizes.spaceBetweenItems),
           SizedBox(
