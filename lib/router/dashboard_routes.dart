@@ -1,9 +1,11 @@
+import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
 import 'package:e_commerce/features/dashboard/profile/ui/profile_screen.dart';
 import 'package:e_commerce/features/dashboard/store/ui/store_screen.dart';
 import 'package:e_commerce/features/dashboard/tab_menu/ui/tab_menu_screen.dart';
 import 'package:e_commerce/features/dashboard/wish_list/ui/wish_list_screen.dart';
 import 'package:e_commerce/router/route_names.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 final dashboardRoutes = StatefulShellRoute.indexedStack(
@@ -15,7 +17,10 @@ final dashboardRoutes = StatefulShellRoute.indexedStack(
         GoRoute(
           path: RouteNames.home.path,
           name: RouteNames.home.name,
-          builder: (context, state) => HomeScreen(),
+          builder: (context, state) => BlocProvider(
+            create: (_) => HomeCubit(),
+            child: HomeScreen(),
+          ),
         ),
       ],
     ),

@@ -9,16 +9,18 @@ class CCircularContainer extends StatelessWidget {
     this._radius = 400,
     this._padding = 0,
     this._backgroundColor = CColors.white,
-    this._child,
+    this._child, this._margin,
   });
 
   final double _width, _height, _radius, _padding;
   final Widget? _child;
   final Color _backgroundColor;
+  final EdgeInsets? _margin;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: _margin,
       width: _width,
       height: _height,
       padding: EdgeInsets.all(_padding),
