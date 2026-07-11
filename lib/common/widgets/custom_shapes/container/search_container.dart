@@ -12,36 +12,41 @@ class SearchContainer extends StatelessWidget {
     this._icon = Iconsax.search_normal,
     this._showBackground = true,
     this._showBorder = true,
+    this._onTap,
   });
 
   final String _text;
   final IconData? _icon;
   final bool _showBackground, _showBorder;
+  final VoidCallback? _onTap;
 
   @override
   Widget build(BuildContext context) {
     final isDark = HelperFunctions.isDarkMode(context);
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: CSizes.defaultSpace),
-      child: Container(
-        width: DeviceUtils.getScreenWidth(context),
-        padding: EdgeInsets.all(CSizes.md),
-        decoration: BoxDecoration(
-          color: _showBackground
-              ? isDark
-                    ? CColors.dark
-                    : CColors.light
-              : Colors.transparent,
-          borderRadius: BorderRadius.circular(CSizes.cardRadiusLg),
-          border: _showBorder ? Border.all(color: CColors.grey) : null,
-        ),
-        child: Row(
-          children: [
-            Icon(_icon, color: CColors.darkGrey),
-            SizedBox(width: CSizes.spaceBetweenItems),
-            Text(_text, style: Theme.of(context).textTheme.bodySmall),
-          ],
+    return GestureDetector(
+      onTap: _onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: CSizes.defaultSpace),
+        child: Container(
+          width: DeviceUtils.getScreenWidth(context),
+          padding: EdgeInsets.all(CSizes.md),
+          decoration: BoxDecoration(
+            color: _showBackground
+                ? isDark
+                      ? CColors.dark
+                      : CColors.light
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(CSizes.cardRadiusLg),
+            border: _showBorder ? Border.all(color: CColors.grey) : null,
+          ),
+          child: Row(
+            children: [
+              Icon(_icon, color: CColors.darkGrey),
+              SizedBox(width: CSizes.spaceBetweenItems),
+              Text(_text, style: Theme.of(context).textTheme.bodySmall),
+            ],
+          ),
         ),
       ),
     );
