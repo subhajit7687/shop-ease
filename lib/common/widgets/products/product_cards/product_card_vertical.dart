@@ -94,33 +94,34 @@ class ProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-                  // Spacer(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ProductPriceText(price: '300'),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: CColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(CSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              CSizes.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: CSizes.iconLg * 1.2,
-                          height: CSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(Iconsax.add, color: CColors.white),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: CSizes.sm),
+                  child: ProductPriceText(price: '300'),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: CColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(CSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(CSizes.productImageRadius),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: CSizes.iconLg * 1.2,
+                    height: CSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(Iconsax.add, color: CColors.white),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

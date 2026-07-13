@@ -1,5 +1,6 @@
 import 'package:e_commerce/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce/common/widgets/products/product_cards/product_card_vertical.dart';
+import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/dashboard/home/ui/widgets/home_header.dart';
 import 'package:e_commerce/features/dashboard/home/ui/widgets/home_promo_slider.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -27,6 +28,8 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: CSizes.spaceBetweenSections),
+                  SectionHeading(title: 'Popular Products', onPressed: () {}),
+                  SizedBox(height: CSizes.spaceBetweenItems),
                   CGridLayout(
                     itemCount: 4,
                     itemBuilder: (context, index) => ProductCardVertical(),
