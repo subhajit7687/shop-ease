@@ -2,6 +2,7 @@ import 'package:e_commerce/common/styles/shadow_style.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:e_commerce/common/widgets/icons/circular_icon.dart';
 import 'package:e_commerce/common/widgets/images/rounded_image.dart';
+import 'package:e_commerce/common/widgets/texts/brand_title_with_verified_icon.dart';
 import 'package:e_commerce/common/widgets/texts/product_price_text.dart';
 import 'package:e_commerce/common/widgets/texts/product_title_text.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
@@ -78,22 +79,7 @@ class ProductCardVertical extends StatelessWidget {
                 children: [
                   ProductTitleText(title: 'Black T-Shirt', smallSize: true),
                   SizedBox(height: CSizes.spaceBetweenItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Generic',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(width: CSizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: CColors.primary,
-                        size: CSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  BrandTitleWithVerifiedIcon(title: 'Generic',),
                 ],
               ),
             ),
