@@ -1,7 +1,7 @@
 import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
-import 'package:e_commerce/features/personalization/profile/profile_details/ui/profile_details_screen.dart';
 import 'package:e_commerce/features/personalization/profile/ui/profile_screen.dart';
+import 'package:e_commerce/features/dashboard/settings/ui/settings_screen.dart';
 import 'package:e_commerce/features/dashboard/store/ui/store_screen.dart';
 import 'package:e_commerce/features/dashboard/tab_menu/ui/tab_menu_screen.dart';
 import 'package:e_commerce/features/dashboard/wish_list/ui/wish_list_screen.dart';
@@ -44,16 +44,9 @@ final dashboardRoutes = StatefulShellRoute.indexedStack(
     StatefulShellBranch(
       routes: [
         GoRoute(
-          path: RouteNames.profile.path,
-          name: RouteNames.profile.name,
-          builder: (context, state) => ProfileScreen(),
-          routes: [
-            GoRoute(
-              path: 'details',
-              name: RouteNames.profileDetails.name,
-              builder: (context, state) => ProfileDetailsScreen(),
-            ),
-          ],
+          path: RouteNames.settings.path,
+          name: RouteNames.settings.name,
+          builder: (context, state) => SettingsScreen(),
         ),
       ],
     ),
