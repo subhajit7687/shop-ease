@@ -17,7 +17,10 @@ enum RouteNames {
   settings('/settings'),
 
   // Settings
-  profile('/profile');
+  profile('/profile'),
+
+  // Products
+  productDetails('/product_details');
 
   final String path;
 

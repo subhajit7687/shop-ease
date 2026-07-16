@@ -1,6 +1,5 @@
 import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
-import 'package:e_commerce/features/personalization/profile/ui/profile_screen.dart';
 import 'package:e_commerce/features/dashboard/settings/ui/settings_screen.dart';
 import 'package:e_commerce/features/dashboard/store/ui/store_screen.dart';
 import 'package:e_commerce/features/dashboard/tab_menu/ui/tab_menu_screen.dart';
