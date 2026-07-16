@@ -14,7 +14,10 @@ enum RouteNames {
   home('/'),
   store('/store'),
   wishList('/wish_list'),
-  profile('/profile');
+
+  // Profile
+  profile('/profile'),
+  profileDetails('/profile/details');
 
   final String path;
 

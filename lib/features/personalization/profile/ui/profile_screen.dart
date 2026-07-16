@@ -2,9 +2,11 @@ import 'package:e_commerce/common/widgets/appbar/custom_appbar.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:e_commerce/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce/router/route_names.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
@@ -33,7 +35,10 @@ class ProfileScreen extends StatelessWidget {
                   ),
 
                   //   User profile card
-                  TUserProfileTile(),
+                  TUserProfileTile(
+                    onPressed: () =>
+                        context.push(RouteNames.profileDetails.path),
+                  ),
                   SizedBox(height: CSizes.spaceBetweenSections),
                 ],
               ),

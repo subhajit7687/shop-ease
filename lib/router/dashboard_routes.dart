@@ -1,5 +1,6 @@
 import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
+import 'package:e_commerce/features/personalization/profile/profile_details/ui/profile_details_screen.dart';
 import 'package:e_commerce/features/personalization/profile/ui/profile_screen.dart';
 import 'package:e_commerce/features/dashboard/store/ui/store_screen.dart';
 import 'package:e_commerce/features/dashboard/tab_menu/ui/tab_menu_screen.dart';
@@ -17,10 +18,8 @@ final dashboardRoutes = StatefulShellRoute.indexedStack(
         GoRoute(
           path: RouteNames.home.path,
           name: RouteNames.home.name,
-          builder: (context, state) => BlocProvider(
-            create: (_) => HomeCubit(),
-            child: HomeScreen(),
-          ),
+          builder: (context, state) =>
+              BlocProvider(create: (_) => HomeCubit(), child: HomeScreen()),
         ),
       ],
     ),
@@ -48,6 +47,13 @@ final dashboardRoutes = StatefulShellRoute.indexedStack(
           path: RouteNames.profile.path,
           name: RouteNames.profile.name,
           builder: (context, state) => ProfileScreen(),
+          routes: [
+            GoRoute(
+              path: 'details',
+              name: RouteNames.profileDetails.name,
+              builder: (context, state) => ProfileDetailsScreen(),
+            ),
+          ],
         ),
       ],
     ),
