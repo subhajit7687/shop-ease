@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/products/product_reviews/ui/product_reviews_screen.dart';
 import 'package:e_commerce/router/route_names.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,5 +9,12 @@ final productRoutes = <RouteBase>[
     path: RouteNames.productDetails.path,
     name: RouteNames.productDetails.name,
     builder: (context, state) => ProductDetailsScreen(),
+    routes: [
+      GoRoute(
+        path: 'reviews',
+        name: RouteNames.productReviews.name,
+        builder: (context, state) => ProductReviewsScreen(),
+      ),
+    ],
   ),
 ];

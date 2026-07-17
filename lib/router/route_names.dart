@@ -20,7 +20,8 @@ enum RouteNames {
   profile('/profile'),
 
   // Products
-  productDetails('/product_details');
+  productDetails('/product_details'),
+  productReviews('/product_details/reviews');
 
   final String path;
 
