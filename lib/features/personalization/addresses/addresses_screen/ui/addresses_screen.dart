@@ -1,5 +1,4 @@
 import 'package:e_commerce/common/widgets/appbar/custom_appbar.dart';
-import 'package:e_commerce/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:e_commerce/features/personalization/addresses/addresses_screen/ui/widgets/single_address.dart';
 import 'package:e_commerce/router/route_names.dart';
 import 'package:e_commerce/utils/constants/colors.dart';

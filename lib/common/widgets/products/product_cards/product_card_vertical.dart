@@ -31,6 +31,7 @@ class ProductCardVertical extends StatelessWidget {
           color: isDark ? CColors.dark : CColors.white,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             RoundedContainer(
               height: 180,

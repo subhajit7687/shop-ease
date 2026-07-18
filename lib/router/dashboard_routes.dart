@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/dashboard/cart/ui/cart_screen.dart';
 import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
 import 'package:e_commerce/features/dashboard/settings/ui/settings_screen.dart';
@@ -8,46 +9,56 @@ import 'package:e_commerce/router/route_names.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-final dashboardRoutes = StatefulShellRoute.indexedStack(
-  builder: (context, state, navigationShell) =>
-      TabMenuScreen(navigationShell: navigationShell),
-  branches: [
-    StatefulShellBranch(
-      routes: [
-        GoRoute(
-          path: RouteNames.home.path,
-          name: RouteNames.home.name,
-          builder: (context, state) =>
-              BlocProvider(create: (_) => HomeCubit(), child: HomeScreen()),
-        ),
-      ],
-    ),
-    StatefulShellBranch(
-      routes: [
-        GoRoute(
-          path: RouteNames.store.path,
-          name: RouteNames.store.name,
-          builder: (context, state) => StoreScreen(),
-        ),
-      ],
-    ),
-    StatefulShellBranch(
-      routes: [
-        GoRoute(
-          path: RouteNames.wishList.path,
-          name: RouteNames.wishList.name,
-          builder: (context, state) => WishListScreen(),
-        ),
-      ],
-    ),
-    StatefulShellBranch(
-      routes: [
-        GoRoute(
-          path: RouteNames.settings.path,
-          name: RouteNames.settings.name,
-          builder: (context, state) => SettingsScreen(),
-        ),
-      ],
-    ),
-  ],
-);
+final dashboardRoutes = [
+  // Tab Routes
+  StatefulShellRoute.indexedStack(
+    builder: (context, state, navigationShell) =>
+        TabMenuScreen(navigationShell: navigationShell),
+    branches: [
+      StatefulShellBranch(
+        routes: [
+          GoRoute(
+            path: RouteNames.home.path,
+            name: RouteNames.home.name,
+            builder: (context, state) =>
+                BlocProvider(create: (_) => HomeCubit(), child: HomeScreen()),
+          ),
+        ],
+      ),
+      StatefulShellBranch(
+        routes: [
+          GoRoute(
+            path: RouteNames.store.path,
+            name: RouteNames.store.name,
+            builder: (context, state) => StoreScreen(),
+          ),
+        ],
+      ),
+      StatefulShellBranch(
+        routes: [
+          GoRoute(
+            path: RouteNames.wishList.path,
+            name: RouteNames.wishList.name,
+            builder: (context, state) => WishListScreen(),
+          ),
+        ],
+      ),
+      StatefulShellBranch(
+        routes: [
+          GoRoute(
+            path: RouteNames.settings.path,
+            name: RouteNames.settings.name,
+            builder: (context, state) => SettingsScreen(),
+          ),
+        ],
+      ),
+    ],
+  ),
+
+  // Screen Routes
+  GoRoute(
+    path: RouteNames.cart.path,
+    name: RouteNames.cart.name,
+    builder: (context, state) => CartScreen(),
+  ),
+];

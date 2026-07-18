@@ -11,7 +11,7 @@ final appRouter = GoRouter(
   routes: [
     ...authRoutes,
     ...commonRoutes,
-    dashboardRoutes,
+    ...dashboardRoutes,
     ...settingsRoutes,
     ...productRoutes,
   ],

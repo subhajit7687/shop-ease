@@ -1,3 +1,4 @@
+import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class CTextTheme {
@@ -17,7 +18,11 @@ class CTextTheme {
     //Body
     bodyLarge: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
     bodyMedium: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400),
-    bodySmall: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
+    bodySmall: TextStyle(
+      fontSize: 14.0,
+      fontWeight: FontWeight.w500,
+      color: CColors.black.withValues(alpha: 0.5),
+    ),
 
     //Label
     labelLarge: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w500),
@@ -38,7 +43,11 @@ class CTextTheme {
     //Body
     bodyLarge: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
     bodyMedium: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400),
-    bodySmall: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
+    bodySmall: TextStyle(
+      fontSize: 14.0,
+      fontWeight: FontWeight.w500,
+      color: CColors.white.withValues(alpha: 0.5),
+    ),
 
     //Label
     labelLarge: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400),
