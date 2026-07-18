@@ -1,4 +1,6 @@
-# E-Commerce app
+<img src="/assets/logo/logo_light.png" alt="App Logo" width="100">
+
+# ShopEase
 
 This app is to practice basic flutter skills. At the same time explore complex UI design patterns,
 learn how to integrate google firebase and explore more advanced concepts like go_router, bloc state
