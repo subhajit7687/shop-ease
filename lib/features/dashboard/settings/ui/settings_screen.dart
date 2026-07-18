@@ -55,9 +55,9 @@ class SettingsScreen extends StatelessWidget {
 
                   TSettingsMenuTile(
                     icon: Iconsax.safe_home,
-                    title: 'My Address',
+                    title: 'My Addresses',
                     subtitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => context.push(RouteNames.addresses.path),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,

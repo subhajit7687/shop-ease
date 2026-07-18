@@ -18,6 +18,8 @@ enum RouteNames {
 
   // Settings
   profile('/profile'),
+  addresses('/addresses'),
+  addNewAddress('/addresses/new_address'),
 
   // Products
   productDetails('/product_details'),

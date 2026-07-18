@@ -28,7 +28,7 @@ class ProductCardVertical extends StatelessWidget {
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(CSizes.productImageRadius),
-          color: isDark ? CColors.darkGrey : CColors.white,
+          color: isDark ? CColors.dark : CColors.white,
         ),
         child: Column(
           children: [
