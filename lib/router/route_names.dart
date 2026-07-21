@@ -16,6 +16,7 @@ enum RouteNames {
   wishList('/wish_list'),
   settings('/settings'),
   cart('/cart'),
+  checkout('/cart/checkout'),
 
   // Settings
   profile('/profile'),

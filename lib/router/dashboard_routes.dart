@@ -1,4 +1,5 @@
 import 'package:e_commerce/features/dashboard/cart/ui/cart_screen.dart';
+import 'package:e_commerce/features/dashboard/checkout/ui/checkout_screen.dart';
 import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
 import 'package:e_commerce/features/dashboard/settings/ui/settings_screen.dart';
@@ -60,5 +61,12 @@ final dashboardRoutes = [
     path: RouteNames.cart.path,
     name: RouteNames.cart.name,
     builder: (context, state) => CartScreen(),
+    routes: [
+      GoRoute(
+        path: 'checkout',
+        name: RouteNames.checkout.name,
+        builder: (context, state) => CheckoutScreen(),
+      ),
+    ],
   ),
 ];
