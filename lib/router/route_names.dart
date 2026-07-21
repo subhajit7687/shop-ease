@@ -17,6 +17,7 @@ enum RouteNames {
   settings('/settings'),
   cart('/cart'),
   checkout('/cart/checkout'),
+  subCategories('/sub_categories'),
 
   // Settings
   profile('/profile'),

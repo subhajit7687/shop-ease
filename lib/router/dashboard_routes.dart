@@ -4,6 +4,7 @@ import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
 import 'package:e_commerce/features/dashboard/settings/settings_screen/ui/settings_screen.dart';
 import 'package:e_commerce/features/dashboard/store/ui/store_screen.dart';
+import 'package:e_commerce/features/dashboard/sub_category/ui/sub_category_screen.dart';
 import 'package:e_commerce/features/dashboard/tab_menu/ui/tab_menu_screen.dart';
 import 'package:e_commerce/features/dashboard/wish_list/ui/wish_list_screen.dart';
 import 'package:e_commerce/router/route_names.dart';
@@ -68,5 +69,11 @@ final dashboardRoutes = [
         builder: (context, state) => CheckoutScreen(),
       ),
     ],
+  ),
+
+  GoRoute(
+    path: RouteNames.subCategories.path,
+    name: RouteNames.subCategories.name,
+    builder: (context, state) => SubCategoryScreen(),
   ),
 ];
