@@ -22,6 +22,7 @@ enum RouteNames {
   profile('/profile'),
   addresses('/addresses'),
   addNewAddress('/addresses/new_address'),
+  myOrders('/my_orders'),
 
   // Products
   productDetails('/product_details'),

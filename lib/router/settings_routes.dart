@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/dashboard/settings/my_orders/ui/my_orders_screen.dart';
 import 'package:e_commerce/features/personalization/addresses/add_new_address/ui/add_new_address_screen.dart';
 import 'package:e_commerce/features/personalization/addresses/addresses_screen/ui/addresses_screen.dart';
 import 'package:e_commerce/features/personalization/profile/ui/profile_screen.dart';
@@ -21,5 +22,10 @@ final settingsRoutes = <RouteBase>[
         builder: (context, state) => AddNewAddressScreen(),
       ),
     ],
+  ),
+  GoRoute(
+    path: RouteNames.myOrders.path,
+    name: RouteNames.myOrders.name,
+    builder: (context, state) => MyOrdersScreen(),
   ),
 ];

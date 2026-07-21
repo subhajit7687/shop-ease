@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
+import '../../../../../common/widgets/list_tiles/user_profile_tile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -36,8 +36,7 @@ class SettingsScreen extends StatelessWidget {
 
                   //   User profile card
                   TUserProfileTile(
-                    onPressed: () =>
-                        context.push(RouteNames.profile.path),
+                    onPressed: () => context.push(RouteNames.profile.path),
                   ),
                   SizedBox(height: CSizes.spaceBetweenSections),
                 ],
@@ -69,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subtitle: 'In-progress and Completed Orders',
-                    onTap: () {},
+                    onTap: () => context.push(RouteNames.myOrders.path),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bank,

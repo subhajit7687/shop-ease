@@ -2,7 +2,7 @@ import 'package:e_commerce/features/dashboard/cart/ui/cart_screen.dart';
 import 'package:e_commerce/features/dashboard/checkout/ui/checkout_screen.dart';
 import 'package:e_commerce/features/dashboard/home/logic/home_cubit.dart';
 import 'package:e_commerce/features/dashboard/home/ui/home_screen.dart';
-import 'package:e_commerce/features/dashboard/settings/ui/settings_screen.dart';
+import 'package:e_commerce/features/dashboard/settings/settings_screen/ui/settings_screen.dart';
 import 'package:e_commerce/features/dashboard/store/ui/store_screen.dart';
 import 'package:e_commerce/features/dashboard/tab_menu/ui/tab_menu_screen.dart';
 import 'package:e_commerce/features/dashboard/wish_list/ui/wish_list_screen.dart';
