@@ -1,4 +1,6 @@
+import 'package:e_commerce/features/dashboard/all_brands/ui/all_brands_screen.dart';
 import 'package:e_commerce/features/dashboard/all_products/ui/all_products_screen.dart';
+import 'package:e_commerce/features/dashboard/brand_products/ui/brand_products_screen.dart';
 import 'package:e_commerce/features/products/product_reviews/ui/product_reviews_screen.dart';
 import 'package:e_commerce/router/route_names.dart';
 import 'package:go_router/go_router.dart';
@@ -23,5 +25,17 @@ final productRoutes = <RouteBase>[
     path: RouteNames.allProducts.path,
     name: RouteNames.allProducts.name,
     builder: (context, state) => AllProductsScreen(),
+  ),
+
+  GoRoute(
+    path: RouteNames.allBrands.path,
+    name: RouteNames.allBrands.name,
+    builder: (context, state) => AllBrandsScreen(),
+  ),
+
+  GoRoute(
+    path: RouteNames.brandProducts.path,
+    name: RouteNames.brandProducts.name,
+    builder: (context, state) => BrandProductsScreen(),
   ),
 ];

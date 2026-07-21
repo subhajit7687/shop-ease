@@ -28,7 +28,9 @@ enum RouteNames {
   // Products
   productDetails('/product_details'),
   productReviews('/product_details/reviews'),
-  allProducts('/all_products');
+  allProducts('/all_products'),
+  allBrands('/all_brands'),
+  brandProducts('/brand_products');
 
   final String path;
 
